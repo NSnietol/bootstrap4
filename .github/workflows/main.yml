@@ -1,0 +1,10 @@
+name : demo-actions
+on : [push, pull_request]
+
+jobs:
+
+  my_first_job:
+    name: Demo actions
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "::set-output name=test::hello"
