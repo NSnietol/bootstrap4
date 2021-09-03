@@ -10,7 +10,7 @@ jobs:
       - run: echo "====== Say Hello from San Luis =========="
       
       
-    my_second_job:
+  my_second_job:
     name: Jardin
     runs-on: ubuntu-latest
     steps:
@@ -18,7 +18,7 @@ jobs:
 
 
       
-    my_second_job:
+  my_third_job:
     name: Rio Claro
     runs-on: ubuntu-latest
     steps:
