@@ -9,7 +9,7 @@ on:
 jobs:
 
   prod-check:
-    if: ${{'contains(github.head_ref,'main')'}}
+    if: ${{contains(github.head_ref,'main')}}
     name: 'Checking heart'
     runs-on: windows-2016
     steps:
