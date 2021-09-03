@@ -7,7 +7,8 @@ jobs:
     name: San Luis
     runs-on: ubuntu-latest
     steps:
-      - run: echo "====== Say Hello from San Luis =========="
+      - run:  uname -a
+      - run: echo " ====== Say Hello from San Luis =========="
       
       
   my_second_job:
