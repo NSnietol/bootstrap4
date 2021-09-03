@@ -4,7 +4,22 @@ on : [push, pull_request]
 jobs:
 
   my_first_job:
-    name: Demo actions
+    name: San Luis
     runs-on: ubuntu-latest
     steps:
-      - run: echo "::set-output name=test::hello"
+      - run: echo "====== Say Hello from San Luis =========="
+      
+      
+    my_second_job:
+    name: Jardin
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "<<<<<< Say Hello from Jardi >>>>>>>"
+
+
+      
+    my_second_job:
+    name: Rio Claro
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "~~~~~~~ Say Hello from Rio Claro ~~~~~~~~~"
