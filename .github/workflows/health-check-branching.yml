@@ -11,15 +11,13 @@ jobs:
   prod-check:
     if: ${{'contains(github.head_ref,'main')'}}
     name: 'Checking heart'
-    runs_on: windows-2016
+    runs-on: windows-2016
     steps:
-    run: |
-    echo "Running heart bit check on prod"
+      run: echo "Running heart bit check on prod"
 
-  prod-check:
-    name: 'Checking heart'
-    runs_on: ubuntu-latest
+  prod-check2:
+    name: 'Checking lungs'
+    runs-on: ubuntu-latest
     steps:
-    run: |
-    echo "Running heart bit check on anywhere"
+      - run: echo "Running heart bit check on anywhere"
   
