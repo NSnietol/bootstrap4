@@ -13,7 +13,7 @@ jobs:
     name: 'Checking heart'
     runs-on: windows-2016
     steps:
-      run: echo "Running heart bit check on prod"
+      - run: echo "Running heart bit check on prod"
 
   prod-check2:
     name: 'Checking lungs'
