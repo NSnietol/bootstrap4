@@ -1,20 +1,19 @@
 name : demo-actions
-
-on:
-  issues:
-    types: [opened, edited, milestoned]
-
+on : [push, pull_request]
 
 jobs:
 
   my_first_job:
     name: San Luis
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-18.04, ubuntu-20.04]
+
     steps:
       - run:  uname -a
       - run: echo " ====== Say Hello from San Luis =========="
       
-  
       
   my_second_job:
     name: Jardin
